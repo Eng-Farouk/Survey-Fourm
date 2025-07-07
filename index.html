@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to learn coding survey form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   <h1 id="title">How to learn coding survey form</h1>
+   <p id="description">Start by choosing a programming paths that aligns with your interests and goals.</p>
+
+   <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+   <fieldset>
+   <label id="name-label">Name <input id="name" type="text" placeholder="Enter your full name" required>
+   </input></label>
+   <label id="email-label">Email <input id="email" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your Email" required>
+   </input></label>
+   <label id="number-label">Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Age">
+   </input></label>
+   </fieldset>
+   <fieldset>
+     <label>Which option best describes your current role? <select id="dropdown">
+       <option value="">Select curren role</option>
+       <option value="1">Student</option>
+       <option value="2"> Full time job</option>
+       <option value="3">Other</option>
+       </select>
+       </label>
+       </fieldset>
+       <fieldset>
+       <legend>What is your favorite way to learn a programming language?</legend><label><input type="radio" name="way" value="SELFE" class="inline" checked></input>Self-learning</label>
+       <label><input type="radio" name="way" value="COURSES" class="inline"></input>Courses</label>
+       <label><input type="radio" name="way" value="NOTSURE" class="inline"></input>Not sure</label>
+     </fieldset>
+     <fieldset>
+       <legend>
+         What programming paths are you interested in studying? (Check all that apply)
+       </legend>
+       <label>
+         <input type="checkbox" value="FRONT" class="inline">Front-end development</input>
+       </label>
+       <label>
+         <input type="checkbox" value="BACK" class="inline">Back-end development</input>
+       </label>
+       <label>
+         <input type="checkbox" value="MACHINE" class="inline">Machine learning</input>
+       </label>
+       <label>
+         <input type="checkbox" value="DATA" class="inline">Data science</input>
+       </label>
+       <label>
+         <input type="checkbox" value="CYBERSECURITY" class="inline">Cybersecurity</input>
+       </label>
+     </fieldset>
+     <fieldset>
+       <label>Provide a bio: <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+
+       </label>
+     </fieldset>
+     <input type="submit" value="Submit" id="submit" />
+
+   </form>
+   
+
+  </body>
+
+</html>
